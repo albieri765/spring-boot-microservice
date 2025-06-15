@@ -58,4 +58,9 @@ public class ProductController {
         }
         return ResponseEntity.notFound().build();
     }
+
+    @GetMapping("/ping")
+    public String ping() {
+        return "API funcionando correctamente";
+    }
 }
